@@ -1,0 +1,10 @@
+        <?php include 'includes/JS.php'; ?>
+        <?php include 'customeJS/pc_productitems_v_js.php'; ?>
+        <?php include 'customeJS/pc_productcontrol_v_js.php'; ?>
+        <?php include 'customeJS/pc_mainmenu_v_js.php'; ?>
+        <?php include 'customeJS/pc_productcontrolsub_v_js.php'; ?>
+        <?php include 'customeJS/pc_productcontrolsub1_v_js.php'; ?>
+        <?php include 'customeJS/pc_productcontrolsub2_v_js.php'; ?>
+        <?php include 'customeJS/pc_productcontrolsub3_v_js.php'; ?>
+        <?php include 'customeJS/pc_productcontrolsub4_v_js.php'; ?>
+        <?php include 'css/main.css'; ?>
