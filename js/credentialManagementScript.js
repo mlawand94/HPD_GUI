@@ -8,13 +8,17 @@ loadCredentialManagementDocs();
             function loadCredentialManagementDocs() {
                 var stores = '';
                 var menudata = '';
-                
+                var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
                 $.post('controllers/credential_management_c.php', {action: "loadUserDocs"}, function (e) {
                     if (e === undefined || e.length === 0 || e === null) {
                                     menudata += '<li><a href="#"> There was an error processing your request. </a></li>';
-                    }else{                    
+                    }else{      
+                        
+                        day = 0;
                         $.each(e, function (index, qd){
-                            
+                          var month = months[Math.floor(Math.random()*months.length)];              
+                          day = day + 1;
+                          date = month.toString() + " " + day.toString() + ", 2017";
                           console.log(e);
                           credentialDocs += '<tr>';
                           credentialDocs += '<td></td>';
@@ -48,7 +52,7 @@ loadCredentialManagementDocs();
                             credentialDocs += '<large>'+qd.uploadDate+'</large>';
                           credentialDocs += '</td>';
                           credentialDocs += '<td>';
-                            credentialDocs += '<large></large>';
+                            credentialDocs += '<large>'+date+'</large>';
                             // <!-- <button type="button" class="btn btn-success btn-xs">Success</button> -->
                           credentialDocs += '</td>';
                           credentialDocs += '<td>';

@@ -71,7 +71,7 @@
                           <th style="width: 20%">Credential</th>
                           <th></th>
                           <th>Last Uploaded</th>
-                          <th></th>
+                          <th>Reminder</th>
                           <th style="width: 20%">Action</th>                          
 
                         </tr>
